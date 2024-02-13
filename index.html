@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FavIcon -->
+    <link rel="icon" href="./assets/images/fav-icon.png">
+
+    <!-- BoxIcon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- TailwindCss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Title -->
+    <title>MegaMart</title>
+</head>
+
+<body>
+    <!-- Header start -->
+    <header>
+        <div class="container">
+            <div class="header-top flex justify-between py-3">
+                <p class="text-[#666666]">Welcome to worldwide Megamart!</p>
+
+                <div class="flex gap-7">
+                    <div class="flex gap-[6px] items-center">
+                        <i class='bx bx-location-plus text-lg text-blue-500'></i>
+                        <p class="text-[#666666]">Deliver to <span class="font-semibold">423651</span></p>
+                    </div>
+                    <div class="flex gap-[6px] items-center">
+                        <i class='bx bxs-truck text-lg text-blue-500'></i>
+                        <p class="text-[#666666]">Track your order</p>
+                    </div>
+                    <div class="flex gap-[6px] items-center">
+                        <i class='bx bxs-offer text-blue-500 text-lg'></i>
+                        <p class="text-[#666666]">All Offers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle flex justify-between py-[21px]">
+
+                <div class="flex gap-3 items-center">
+                    <i class='bx bx-menu-alt-left text-3xl bg-[#f3f9fb] py-1 px-2 text-[#008ecc] rounded-lg'></i>
+                    <h1 class="font-bold text-3xl text-[#008ecc]">MegaMart</h1>
+                </div>
+                <div class="flex gap-5 items-center">
+
+                    <div class="bg-[#f3f9fb] p-3 rounded-[10px] flex items-center w-[507px]">
+                        <button class="mr-2">
+                            <i class='bx bx-search text-lg text-blue-500'></i>
+                        </button>
+                        <input type="text" placeholder="Search essentials, groceries and more..."
+                            class="w-full bg-transparent border-none focus:outline-none" />
+                        <button>
+                            <i class='bx bx-menu text-2xl text-blue-500'></i>
+                        </button>
+                    </div>
+
+                    <div class="flex gap-[6px] items-center">
+                        <i class='bx bx-user text-lg text-blue-500'></i>
+                        <p class="font-bold text-[#666666]">Sign Up/Sign In</p>
+                    </div>
+
+                    <p class="text-gray-300">|</p>
+
+                    <div class="flex gap-[6px] items-center">
+                        <i class='bx bx-cart text-lg text-blue-500'></i>
+                        <p class="font-bold text-[#666666]">Cart</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="header-bottom">
+                <div class="flex justify-between">
+                    <div
+                        class="flex items-center bg-[#F3F9FB] hover:bg-[#008ECC] py-[9px] px-[14px] rounded-[18px] hover:text-white gap-[6px]">
+                        <p class="text[#222222] font-medium text-[15px]">Groceries</p>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div
+                        class="flex items-center bg-[#F3F9FB] hover:bg-[#008ECC] py-[9px] px-[14px] rounded-[18px] hover:text-white gap-[6px]">
+                        <p class="text[#222222] font-medium text-[15px]">Premium Fruits</p>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div
+                        class="flex items-center bg-[#F3F9FB] hover:bg-[#008ECC] py-[9px] px-[14px] rounded-[18px] hover:text-white gap-[6px]">
+                        <p class="text[#222222] font-medium text-[15px]">Home & Kitchen</p>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div
+                        class="flex items-center bg-[#F3F9FB] hover:bg-[#008ECC] py-[9px] px-[14px] rounded-[18px] hover:text-white gap-[6px]">
+                        <p class="text[#222222] font-medium text-[15px]">Fashion</p>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div
+                        class="flex items-center bg-[#F3F9FB] hover:bg-[#008ECC] py-[9px] px-[14px] rounded-[18px] hover:text-white gap-[6px]">
+                        <p class="text[#222222] font-medium text-[15px]">Electronics</p>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div
+                        class="flex items-center bg-[#F3F9FB] hover:bg-[#008ECC] py-[9px] px-[14px] rounded-[18px] hover:text-white gap-[6px]">
+                        <p class="text[#222222] font-medium text-[15px]">Beauty</p>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div
+                        class="flex items-center bg-[#F3F9FB] hover:bg-[#008ECC] py-[9px] px-[14px] rounded-[18px] hover:text-white gap-[6px]">
+                        <p class="text[#222222] font-medium text-[15px]">Home Improvement</p>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div
+                        class="flex items-center bg-[#F3F9FB] hover:bg-[#008ECC] py-[9px] px-[14px] rounded-[18px] hover:text-white gap-[6px]">
+                        <p class="text[#222222] font-medium text-[15px]">Sports, Toys & Luggage</p>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main start -->
+    <main>
+        <section id="intro" class="pt-[36px] mb-[120px]">
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class=" bg-[#212844] flex  justify-between rounded-2xl">
+                                <div class="mt-[40px] ml-[90px]">
+                                    <h3 class="font-semibold text-3xl text-white">Best Deal Online on smart watches</h3>
+                                    <h1 class="text-[63px] font-bold text-white">SMART WEARABLE.</h1>
+                                    <h3 class="font-semibold text-3xl text-white">UP to 80% OFF</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/watch.svg" alt="watch">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" bg-[#212844] flex  justify-between rounded-2xl">
+                                <div class="mt-[40px] ml-[90px]">
+                                    <h3 class="font-semibold text-3xl text-white">Best Deal Online on smart watches</h3>
+                                    <h1 class="text-[63px] font-bold text-white">SMART WEARABLE.</h1>
+                                    <h3 class="font-semibold text-3xl text-white">UP to 80% OFF</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/watch.svg" alt="watch">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" bg-[#212844] flex  justify-between rounded-2xl">
+                                <div class="mt-[40px] ml-[90px]">
+                                    <h3 class="font-semibold text-3xl text-white">Best Deal Online on smart watches</h3>
+                                    <h1 class="text-[63px] font-bold text-white">SMART WEARABLE.</h1>
+                                    <h3 class="font-semibold text-3xl text-white">UP to 80% OFF</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/watch.svg" alt="watch">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" bg-[#212844] flex  justify-between rounded-2xl">
+                                <div class="mt-[40px] ml-[90px]">
+                                    <h3 class="font-semibold text-3xl text-white">Best Deal Online on smart watches</h3>
+                                    <h1 class="text-[63px] font-bold text-white">SMART WEARABLE.</h1>
+                                    <h3 class="font-semibold text-3xl text-white">UP to 80% OFF</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/watch.svg" alt="watch">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" bg-[#212844] flex  justify-between rounded-2xl">
+                                <div class="mt-[40px] ml-[90px]">
+                                    <h3 class="font-semibold text-3xl text-white">Best Deal Online on smart watches</h3>
+                                    <h1 class="text-[63px] font-bold text-white">SMART WEARABLE.</h1>
+                                    <h3 class="font-semibold text-3xl text-white">UP to 80% OFF</h3>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/watch.svg" alt="watch">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="phone">
+            <div class="container">
+                <div class="phone__wrapper">
+                    <div class="phone-title flex justify-between">
+                        <div class="mb-[4px]">
+                            <p class="text-[23px] font-bold text-[#666666] ">Grab the best deal on <span
+                                    class="text-[#008ECC]">Smartphones</span></p>
+                        </div>
+
+                        <div class="flex gap-[6px] items-start">
+                            <p class="font-medium">View All</p>
+                            <i class='bx bx-chevron-right text-lg text-blue-500'></i>
+                        </div>
+                    </div>
+                    <img src="./assets/images/line.svg" alt="line">
+
+                    <div class="phone__items">
+                        <!-- <div class="hover:shadow-xl">
+                            <div
+                                class="phone-cards border-[1px] border-[#EDEDED] rounded-tr-2xl rounded-tl-2xl py-[15px] px-[70px] bg-[#F5F5F5] relative">
+                                <img src="./assets/images/discount.svg" alt="discount" class="absolute top-0 right-0">
+                                <img src="./assets/images/phone.svg" alt="phone">
+                            </div>
+                            <div
+                                class="pt-[12px] px-[12px] border-[1px] border-[#EDEDED] rounded-br-2xl rounded-bl-2xl">
+                                <p class="font-semibold text-[#222222] mb-[10px]">Galaxy S22 Ultra</p>
+
+                                <div class="flex gap-[10px] mb-[10.5px] border-b border-[#EDEDED]">
+                                    <p class="font-bold mb-[9.5px]">₹32999</p>
+                                    <p class="line-through font-normal text-[#222222] mb-[9.5px]">₹74999</p>
+                                </div>
+
+                                <p class="text-[#249B3E] font-semibold mb-[10px]">Save - ₹32999</p>
+                            </div>
+                        </div>
+
+                        <div class="hover:shadow-xl">
+                            <div
+                                class="phone-cards border-[1px] border-[#EDEDED] rounded-tr-2xl rounded-tl-2xl py-[15px] px-[70px] bg-[#F5F5F5] relative">
+                                <img src="./assets/images/discount.svg" alt="discount" class="absolute top-0 right-0">
+                                <img src="./assets/images/phone.svg" alt="phone">
+                            </div>
+                            <div
+                                class="pt-[12px] px-[12px] border-[1px] border-[#EDEDED] rounded-br-2xl rounded-bl-2xl">
+                                <p class="font-semibold text-[#222222] mb-[10px]">Galaxy S22 Ultra</p>
+
+                                <div class="flex gap-[10px] mb-[10.5px] border-b border-[#EDEDED]">
+                                    <p class="font-bold mb-[9.5px]">₹32999</p>
+                                    <p class="line-through font-normal text-[#222222] mb-[9.5px]">₹74999</p>
+                                </div>
+
+                                <p class="text-[#249B3E] font-semibold mb-[10px]">Save - ₹32999</p>
+                            </div>
+                        </div>
+
+                        <div class="hover:shadow-xl">
+                            <div
+                                class="phone-cards border-[1px] border-[#EDEDED] rounded-tr-2xl rounded-tl-2xl py-[15px] px-[70px] bg-[#F5F5F5] relative">
+                                <img src="./assets/images/discount.svg" alt="discount" class="absolute top-0 right-0">
+                                <img src="./assets/images/phone.svg" alt="phone">
+                            </div>
+                            <div
+                                class="pt-[12px] px-[12px] border-[1px] border-[#EDEDED] rounded-br-2xl rounded-bl-2xl">
+                                <p class="font-semibold text-[#222222] mb-[10px]">Galaxy S22 Ultra</p>
+
+                                <div class="flex gap-[10px] mb-[10.5px] border-b border-[#EDEDED]">
+                                    <p class="font-bold mb-[9.5px]">₹32999</p>
+                                    <p class="line-through font-normal text-[#222222] mb-[9.5px]">₹74999</p>
+                                </div>
+
+                                <p class="text-[#249B3E] font-semibold mb-[10px]">Save - ₹32999</p>
+                            </div>
+                        </div>
+
+                        <div class="hover:shadow-xl">
+                            <div
+                                class="phone-cards border-[1px] border-[#EDEDED] rounded-tr-2xl rounded-tl-2xl py-[15px] px-[70px] bg-[#F5F5F5] relative">
+                                <img src="./assets/images/discount.svg" alt="discount" class="absolute top-0 right-0">
+                                <img src="./assets/images/phone.svg" alt="phone">
+                            </div>
+                            <div
+                                class="pt-[12px] px-[12px] border-[1px] border-[#EDEDED] rounded-br-2xl rounded-bl-2xl">
+                                <p class="font-semibold text-[#222222] mb-[10px]">Galaxy S22 Ultra</p>
+
+                                <div class="flex gap-[10px] mb-[10.5px] border-b border-[#EDEDED]">
+                                    <p class="font-bold mb-[9.5px]">₹32999</p>
+                                    <p class="line-through font-normal text-[#222222] mb-[9.5px]">₹74999</p>
+                                </div>
+
+                                <p class="text-[#249B3E] font-semibold mb-[10px]">Save - ₹32999</p>
+                            </div>
+                        </div>
+
+                        <div class="hover:shadow-xl">
+                            <div
+                                class="phone-cards border-[1px] border-[#EDEDED] rounded-tr-2xl rounded-tl-2xl py-[15px] px-[70px] bg-[#F5F5F5] relative">
+                                <img src="./assets/images/discount.svg" alt="discount" class="absolute top-0 right-0">
+                                <img src="./assets/images/phone.svg" alt="phone">
+                            </div>
+                            <div
+                                class="pt-[12px] px-[12px] border-[1px] border-[#EDEDED] rounded-br-2xl rounded-bl-2xl">
+                                <p class="font-semibold text-[#222222] mb-[10px]">Galaxy S22 Ultra</p>
+
+                                <div class="flex gap-[10px] mb-[10.5px] border-b border-[#EDEDED]">
+                                    <p class="font-bold mb-[9.5px]">₹32999</p>
+                                    <p class="line-through font-normal text-[#222222] mb-[9.5px]">₹74999</p>
+                                </div>
+
+                                <p class="text-[#249B3E] font-semibold mb-[10px]">Save - ₹32999</p>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="category">
+            <div class="container">
+                <div class="category__wrapper">
+                    <div class="category-title flex justify-between">
+                        <div class="mb-[4px]">
+                            <p class="text-[23px] font-bold text-[#666666] ">Shop From <span class="text-[#008ECC]">Top
+                                    Categories</span></p>
+                        </div>
+
+                        <div class="flex gap-[6px] items-start">
+                            <p class="font-medium">View All</p>
+                            <i class='bx bx-chevron-right text-lg text-blue-500'></i>
+                        </div>
+                    </div>
+                    <img src="./assets/images/line.svg" alt="line">
+
+                    <div class="flex justify-between mt-[40px] mb-[120px]">
+                        <img src="./assets/images/category1.svg" alt="category">
+                        <img src="./assets/images/category2.svg" alt="category">
+                        <img src="./assets/images/category3.svg" alt="category">
+                        <img src="./assets/images/category4.svg" alt="category">
+                        <img src="./assets/images/category5.svg" alt="category">
+                        <img src="./assets/images/category6.svg" alt="category">
+                        <img src="./assets/images/category7.svg" alt="category">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="brands">
+            <div class="container">
+
+                <div class="category-title flex justify-between">
+                    <div class="mb-[4px]">
+                        <p class="text-[23px] font-bold text-[#666666] ">Top <span class="text-[#008ECC]">Electronics
+                                Brands</span>
+                        </p>
+                    </div>
+
+                    <div class="flex gap-[6px] items-start">
+                        <p class="font-medium">View All</p>
+                        <i class='bx bx-chevron-right text-lg text-blue-500'></i>
+                    </div>
+                </div>
+                <img src="./assets/images/line.svg" alt="line">
+
+                <div class="swiper mySwiper2 mb-[120px] mt-[40px]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/images/brands1.svg" alt="brands"></div>
+                        <div class="swiper-slide"><img src="./assets/images/brands2.svg" alt="brands"></div>
+                        <div class="swiper-slide"><img src="./assets/images/brands3.svg" alt="brands"></div>
+                        <div class="swiper-slide"><img src="./assets/images/brands1.svg" alt="brands"></div>
+                        <div class="swiper-slide"><img src="./assets/images/brands2.svg" alt="brands"></div>
+                        <div class="swiper-slide"><img src="./assets/images/brands3.svg" alt="brands"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brands">
+            <div class="container">
+
+                <div class="category-title flex justify-between">
+                    <div class="mb-[4px]">
+                        <p class="text-[23px] font-bold text-[#666666] ">Top <span class="text-[#008ECC]">Electronics
+                                Brands</span>
+                        </p>
+                    </div>
+
+                    <div class="flex gap-[6px] items-start">
+                        <p class="font-medium">View All</p>
+                        <i class='bx bx-chevron-right text-lg text-blue-500'></i>
+                    </div>
+                </div>
+                <img src="./assets/images/line.svg" alt="line">
+
+                <div class="brands-img flex justify-between mt-[40px] mb-[120px]">
+                    <div class="brands-card">
+                        <img src="./assets/images/essential3.svg" alt="essential" class="essential">
+                        <div class="text-center py-[20px]">
+                            <p class="text-[#666666] font-medium">Daily Essentials</p>
+                            <p class="font-bold text-[20px]">UP to 50% OFF</p>
+                        </div>
+                    </div>
+                    <div class="brands-card">
+                        <img src="./assets/images/essential2.svg" alt="essential" class="essential">
+                        <div class="text-center py-[20px]">
+                            <p class="text-[#666666] font-medium">Vegitables</p>
+                            <p class="font-bold text-[20px]">UP to 50% OFF</p>
+                        </div>
+                    </div>
+                    <div class="brands-card">
+                        <img src="./assets/images/essential3.svg" alt="essential" class="essential">
+                        <div class="text-center py-[20px]">
+                            <p class="text-[#666666] font-medium">Fruits</p>
+                            <p class="font-bold text-[20px]">UP to 50% OFF</p>
+                        </div>
+                    </div>
+                    <div class="brands-card">
+                        <img src="./assets/images/essential4.svg" alt="essential" class="essential">
+                        <div class="text-center py-[20px]">
+                            <p class="text-[#666666] font-medium">Strawberry</p>
+                            <p class="font-bold text-[20px]">UP to 50% OFF</p>
+                        </div>
+                    </div>
+                    <div class="brands-card">
+                        <img src="./assets/images/essential5.svg" alt="essential" class="essential">
+                        <div class="text-center py-[20px]">
+                            <p class="text-[#666666] font-medium">Mango</p>
+                            <p class="font-bold text-[20px]">UP to 50% OFF</p>
+                        </div>
+                    </div>
+                    <div class="brands-card">
+                        <img src="./assets/images/essential6.svg" alt="essential" class="essential">
+                        <div class="text-center py-[20px]">
+                            <p class="text-[#666666] font-medium">Cherry</p>
+                            <p class="font-bold text-[20px]">UP to 50% OFF</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main end -->
+
+    <footer class="bg-[#008ECC]">
+        <div class="container">
+            <div class="flex gap-[90px] py-[80px]">
+                <div>
+                    <h1 class="text-white mb-[34px] text-3xl font-bold">MegaMart</h1>
+                    <p class="font-bold text-[20px] text-white mb-[20px]">Contact Us</p>
+                    <div class="flex items-baseline gap-[10px] text-white mb-[20px]">
+                        <i class='bx bxl-whatsapp'></i>
+                        <div>
+                            <p>Whats App</p>
+                            <p>+1 202-918-2132</p>
+                        </div>
+                    </div>
+                    <div class="flex items-baseline gap-[10px] text-white mb-[20px]">
+                        <i class='bx bx-phone-call'></i>
+                        <div>
+                            <p>Call Us</p>
+                            <p>+1 202-918-2132</p>
+                        </div>
+                    </div>
+
+                    <p class="font-bold text-[20px] text-white mb-[20px]">Download App</p>
+                    <div class="flex gap-[20px]">
+                        <img src="./assets/images/appstore.svg" alt="appstore">
+                        <img src="./assets/images/google-play.svg" alt="google-play">
+                    </div>
+                </div>
+
+                <div>
+                    <ul class="text-white">
+                        <li class="font-medium text-[20px] mb-[26px]">Most Popular Categories</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">Staples</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">Beverages</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">Personal Care</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">Home Care</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">Baby Care</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">Vegetables & Fruits</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">Snacks & Foods</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">Dairy & Bakery</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="text-white">
+                        <li class="font-medium text-[20px] mb-[26px]">Customer Services</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">About Us</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">Terms & Conditions</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">FAQ</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">Privacy Policy</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">E-waste Policy</li>
+                        <li class="font-medium mb-3 cursor-pointer hover:underline">Cancellation & Return Policy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border border-[#05ABF3]"></div>
+
+            <p class="py-[30px] text-center text-white text-[20px] font-normal">© 2022 All rights reserved. Reliance Retail Ltd.</p>
+        </div>
+    </footer>
+
+</body>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        autoplay: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+<!-- connected Js data file -->
+<script src="./product.js"></script>
+
+<!-- connected Js file -->
+<script src="./script.js"></script>
+
+</html>
