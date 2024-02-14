@@ -204,14 +204,29 @@
             <div class="container">
                 <div class="phone__wrapper">
                     <div class="phone-title flex justify-between">
-                        <div class="mb-[4px]">
+                        <div>
                             <p class="text-[23px] font-bold text-[#666666] ">Grab the best deal on <span
                                     class="text-[#008ECC]">Smartphones</span></p>
                         </div>
 
-                        <div class="flex gap-[6px] items-start">
-                            <p class="font-medium">View All</p>
-                            <i class='bx bx-chevron-right text-lg text-blue-500'></i>
+                        <div class="flex gap-2">
+                        
+                            <select id="brands" class="form-select border-[1px] rounded-md">
+                                <option disabled selected>Brandni tanlang</option>
+                            </select>
+                        
+                            <select id="letter" class="form-select border-[1px] rounded-md">
+                                <option disabled selected>Saralash</option>
+                                <option value="a-z">A-z</option>
+                                <option value="z-a">Z-A</option>
+                            </select>
+                        
+                            <select id="price" class="form-select border-[1px] rounded-md">
+                                <option disabled selected>Narx saralash</option>
+                                <option value="up">O'sish</option>
+                                <option value="down">Kamayish</option>
+                            </select>
+                        
                         </div>
                     </div>
                     <img src="./assets/images/line.svg" alt="line">
@@ -501,11 +516,14 @@
 
             <div class="border border-[#05ABF3]"></div>
 
-            <p class="py-[30px] text-center text-white text-[20px] font-normal">© 2022 All rights reserved. Reliance Retail Ltd.</p>
+            <p class="py-[30px] text-center text-white text-[20px] font-normal">© 2022 All rights reserved. Reliance
+                Retail Ltd.</p>
         </div>
     </footer>
 
 </body>
+<!-- Utils js -->
+<script src="./utils.js"></script>
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
