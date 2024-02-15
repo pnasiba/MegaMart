@@ -207,7 +207,7 @@ const product = {
       discountPercentage: 8.4,
       rating: 4.26,
       stock: 65,
-      brand: "Impression of Acqua Di Gio",
+      brand: "Impression of Acqua Di",
       category: "fragrances",
       thumbnail: "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
       images: [
