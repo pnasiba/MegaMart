@@ -138,7 +138,7 @@ const product = {
     {
       id: 8,
       quantity: 0,
-      title: "Microsoft Surface Laptop 4",
+      title: "Microsoft Surface Laptop",
       description:
         "Style and speed. Stand out on HD video cal,ls backed by Studio Mics. Capture ideas on, the vibrant touchscreen.",
       price: 1499,
@@ -161,7 +161,7 @@ const product = {
       quantity: 0,
       title: "Infinix INBOOK",
       description:
-        "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+        "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey 1 Year Warranty",
       price: 1099,
       discountPercentage: 11.83,
       rating: 4.54,
@@ -441,7 +441,7 @@ const product = {
     {
       id: 23,
       quantity: 0,
-      title: "Orange Essence Food Flavo",
+      title: "Orange Essence Food Flav",
       description:
         "Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item",
       price: 14,
@@ -469,7 +469,7 @@ const product = {
       discountPercentage: 16.8,
       rating: 4.94,
       stock: 113,
-      brand: "fauji",
+      brand: "Fauji",
       category: "groceries",
       thumbnail: "https://i.dummyjson.com/data/products/24/thumbnail.jpg",
       images: [

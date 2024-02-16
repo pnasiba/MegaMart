@@ -58,7 +58,7 @@
                         <button class="mr-2">
                             <i class='bx bx-search text-lg text-blue-500'></i>
                         </button>
-                        <input type="text" placeholder="Search essentials, groceries and more..."
+                        <input id="search" type="search" placeholder="Search essentials, groceries and more..."
                             class="w-full bg-transparent border-none focus:outline-none" />
                         <button>
                             <i class='bx bx-menu text-2xl text-blue-500'></i>
@@ -210,28 +210,46 @@
                         </div>
 
                         <div class="flex gap-2">
-                        
+
+                            <select id="category" class="form-select border-[1px] rounded-md">
+                                <option disabled selected>Kategoriyani tanlang</option>
+                                <option value="smartphones">Smartphones</option>
+                                <option value="laptops">Laptops</option>
+                                <option value="fragrances">Fragrances</option>
+                                <option value="skincare">Skincare</option>
+                                <option value="groceries">Groceries</option>
+                                <option value="home-decoration">Home-decoration</option>
+                            </select>
+
                             <select id="brands" class="form-select border-[1px] rounded-md">
                                 <option disabled selected>Brandni tanlang</option>
                             </select>
-                        
+
                             <select id="letter" class="form-select border-[1px] rounded-md">
                                 <option disabled selected>Saralash</option>
                                 <option value="a-z">A-z</option>
                                 <option value="z-a">Z-A</option>
                             </select>
-                        
+
                             <select id="price" class="form-select border-[1px] rounded-md">
                                 <option disabled selected>Narx saralash</option>
                                 <option value="up">O'sish</option>
                                 <option value="down">Kamayish</option>
                             </select>
-                        
+
+                            <select id="rating" class="form-select border-[1px] rounded-md">
+                                <option disabled selected>Reyting saralash</option>
+                                <option value="rise">O'sish</option>
+                                <option value="decrease">Kamayish</option>
+                            </select>
+
                         </div>
                     </div>
                     <img src="./assets/images/line.svg" alt="line">
 
                     <div class="phone__items">
+
+
                         <!-- <div class="hover:shadow-xl">
                             <div
                                 class="phone-cards border-[1px] border-[#EDEDED] rounded-tr-2xl rounded-tl-2xl py-[15px] px-[70px] bg-[#F5F5F5] relative">
@@ -326,6 +344,8 @@
                                 <p class="text-[#249B3E] font-semibold mb-[10px]">Save - ₹32999</p>
                             </div>
                         </div> -->
+
+
 
                     </div>
                 </div>
